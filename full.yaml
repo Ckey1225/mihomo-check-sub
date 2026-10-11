@@ -1,3 +1,13 @@
+# ============================================================
+#  mihomo-check 自动优选订阅 · 完整配置
+#  更新时间: 2026-10-11 12:15:06 CST
+#  节点总数: 275
+#  类型分布: http:231 / socks5:19 / anytls:13 / vless:9 / vmess:2 / ss:1
+#  代理组: 🚀 节点选择(手动) / ♻️ 自动选择(url-test)
+#  端口: mixed-port 7890 | DNS: fake-ip (223.5.5.5/119.29.29.29)
+#  用途: 直接作为客户端订阅导入
+#  纯节点列表版: https://raw.githubusercontent.com/Ckey1225/mihomo-check-sub/main/premium.yaml
+# ============================================================
 mixed-port: 7890
 allow-lan: false
 mode: rule
