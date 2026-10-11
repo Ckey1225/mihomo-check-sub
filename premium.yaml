@@ -1,3 +1,12 @@
+# ============================================================
+#  mihomo-check 自动优选订阅 · 纯节点列表 (premium.yaml)
+#  更新时间 : 2026-10-11 12:18:55 CST
+#  节点总数 : 259
+#  类型分布 : http:219 / socks5:20 / anytls:14 / vmess:3 / vless:2 / ss:1
+#  生产流程 : 17条公开订阅合并 → 去重 → 存活检测 → 轻量测速筛选
+#  用途     : 供 Mihomo proxy-providers 引用（不含代理组/规则）
+#  完整配置版: https://raw.githubusercontent.com/Ckey1225/mihomo-check-sub/main/full.yaml
+# ============================================================
 proxies:
     - cipher: aes-256-gcm
       name: "\U0001F1FA\U0001F1F3 UN 000"
@@ -13,7 +22,7 @@ proxies:
       sni: hkfash.9999231.xyz
       type: anytls
       udp: true
-    - name: "\U0001F1ED\U0001F1F0 HK 002 | � 887 KB/s"
+    - name: "\U0001F1ED\U0001F1F0 HK 002 |  887 KB/s"
       port: 10808
       server: 36.155.23.163
       skip-cert-verify: true
