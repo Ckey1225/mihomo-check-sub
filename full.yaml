@@ -1,8 +1,8 @@
 # ============================================================
 #  mihomo-check 自动优选订阅 · 完整配置 (full.yaml)
-#  更新时间 : 2026-10-18 06:19:22 CST
-#  节点总数 : 187
-#  类型分布 : http:165 / vless:10 / socks5:9 / anytls:2 / trojan:1
+#  更新时间 : 2026-10-18 18:15:19 CST
+#  节点总数 : 35
+#  类型分布 : http:22 / vless:9 / anytls:2 / socks5:2
 #  代理组   : 🚀 节点选择(手动) / ⟳ 自动选择(url-test 自动优选)
 #  端口     : mixed-port 7890 | DNS: fake-ip (223.5.5.5 / 119.29.29.29)
 #  用途     : 直接作为客户端订阅导入
@@ -22,179 +22,13 @@ dns:
   - 119.29.29.29
   - 114.114.114.114
 proxies:
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: 🇩🇪 DE 000 | ⬇️ 1.53 MB/s
-  network: http
+- name: 🇧🇪 BE 009 | ⬇️ 764 KB/s
   port: 443
-  server: 3.124.195.79
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇳 UN 002 | ⬇️ 1.44 MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: edge.bookmai.com
-  servername: mother-earth.fyi
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  xudp: true
-- name: 🇺🇳 UN 004 | ⬇️ 1.57 MB/s
-  password: freeuser1
-  port: 9251
-  server: fr012.freeconnect.link
-  sni: fr012.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 005 | ⬇️ 824 KB/s
-  port: 443
-  server: 213.109.163.119
+  server: 146.70.123.98
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇳 UN 006 | ⬇️ 1.75 MB/s
-  password: freeuser1
-  port: 9251
-  server: fr017.freeconnect.link
-  skip-cert-verify: true
-  sni: fr017.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 007 | ⬇️ 1.35 MB/s
-  port: 443
-  server: 185.232.70.11
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 011 | ⬇️ 1.66 MB/s
-  password: 'null'
-  port: 443
-  server: 185.140.209.235
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 🇺🇳 UN 012 | ⬇️ 1.64 MB/s
-  port: 443
-  server: 152.53.107.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷 FR 013 | ⬇️ 1.55 MB/s
-  port: 6103
-  server: 87.98.174.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 018 | ⬇️ 119 KB/s
-  port: 443
-  server: 43.160.239.37
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: studiofeed
-  name: 🇩🇪 DE 020 | ⬇️ 940 KB/s
-  network: grpc
-  port: 443
-  server: studio.10media.top
-  servername: studio.10media.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-- name: 🇫🇷 FR 021 | ⬇️ 1.52 MB/s
-  port: 443
-  server: 51.210.167.149
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 024 | ⬇️ 1.30 MB/s
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇮🇪 IE 026 | ⬇️ 1.42 MB/s
-  port: 443
-  server: 18.200.158.139
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 029 | ⬇️ 1.24 MB/s
-  port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 036 | ⬇️ 1.28 MB/s
-  password: None
-  port: 443
-  server: 185.94.192.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: 🇰🇷 KR 037 | ⬇️ 2.21 MB/s
-  network: http
-  port: 443
-  server: 43.203.219.68
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-- name: 🇺🇳 UN 041 | ⬇️ 1.44 MB/s
-  port: 443
-  server: 34.249.214.108
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 045 | ⬇️ 1.23 MB/s
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 046 | ⬇️ 1.37 MB/s
-  port: 8080
-  server: 65.109.179.56
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 047 | ⬇️ 1.12 MB/s
-  port: 9002
-  server: 193.176.84.38
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇹🇼 TW 048 | ⬇️ 173 KB/s
+- name: 🇺🇳 UN 027 | ⬇️ 659 KB/s
   password: ec74bb6a86c2
   port: 443
   server: 684616s4.df6h451rh.xin
@@ -202,80 +36,62 @@ proxies:
   sni: px.ads.linkedin.com
   type: anytls
   udp: true
-- name: 🇷🇴 RO 049 | ⬇️ 1014 KB/s
-  port: 9002
-  server: 193.176.84.17
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇸🇬 SG 028 | ⬇️ 400 KB/s
+  port: 46105
+  reality-opts:
+    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
+    short-id: 28f5c1f8f98a
+  server: funagfrdfs.alixxplay.com
+  servername: www.lamer.com.sg
   skip-cert-verify: true
   tls: true
-  type: http
+  type: vless
   udp: true
-- name: 🇺🇳 UN 050 | ⬇️ 848 KB/s
-  password: freeuser1
-  port: 9251
-  server: nl209.freeconnect.link
-  skip-cert-verify: true
-  sni: nl209.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇷🇴 RO 051 | ⬇️ 829 KB/s
-  port: 9002
-  server: 193.176.84.30
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪 DE 052 | ⬇️ 1.11 MB/s
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: 🇺🇳 UN 047 | ⬇️ 121 KB/s
   password: None
-  port: 9002
-  server: 193.176.84.22
+  port: 23856
+  server: 51.159.225.196
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇷🇴 RO 054 | ⬇️ 696 KB/s
-  port: 9002
-  server: 193.176.84.33
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 SG 058 | ⬇️ 586 KB/s
+  port: 34379
+  reality-opts:
+    public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
+    short-id: e51285e3
+  server: funagfrdfs.alixxplay.com
+  servername: us1p1.xn--ghq880n3na965a.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: 🇺🇸 US 063 | ⬇️ 430 KB/s
+  port: 443
+  server: fan.365747.xyz
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇺🇳 UN 055 | ⬇️ 1.09 MB/s
-  port: 9002
-  server: 193.176.84.18
+- name: 🇳🇱 NL 072 | ⬇️ 542 KB/s
+  port: 9443
+  server: 149.36.51.161
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇴 RO 056 | ⬇️ 1.10 MB/s
-  port: 9002
-  server: 193.176.84.24
+- name: 🇺🇸 US 076 | ⬇️ 567 KB/s
+  port: 443
+  server: 148.135.10.80
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
-- name: 🇺🇳 UN 057 | ⬇️ 1.09 MB/s
-  password: 'null'
-  port: 9002
-  server: 193.176.84.37
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇳 UN 058 | ⬇️ 692 KB/s
-  port: 9002
-  server: 193.176.84.29
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 060 | ⬇️ 1.01 MB/s
-  password: None
-  port: 9002
-  server: 193.176.84.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇳 UN 061 | ⬇️ 1.60 MB/s
+- name: 🇺🇳 UN 079 | ⬇️ 252 KB/s
   password: None
   port: 443
   server: 5.255.118.82
@@ -283,37 +99,174 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇳 UN 062 | ⬇️ 905 KB/s
-  password: 'null'
-  port: 9002
-  server: 193.176.84.26
+- name: 🇷🇺 RU 082 | ⬇️ 108 KB/s
+  port: 1446
+  server: 46.29.166.134
   skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
-- name: 🇩🇪 DE 063 | ⬇️ 761 KB/s
-  password: freeuser1
-  port: 9251
-  server: nl201.freeconnect.link
-  sni: nl201.freeconnect.link
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇷🇺 RU 089 | ⬇️ 266 KB/s
+  port: 443
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  server: api.mediakaskad.cc
+  servername: api.mediakaskad.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇨🇦 CA 115 | ⬇️ 372 KB/s
+  port: 56415
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  server: funagfrdfs.alixxplay.com
+  servername: www.kaidee.com
+  tls: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇺🇳 UN 120 | ⬇️ 416 KB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI
+    short-id: dc927a04e8572c61
+  server: 195.58.140.146
+  servername: d1-fr.cloud-cdn.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7790b85-9659-4558-a405-e0ab57d32984
+- name: 🇭🇰 HK 122 | ⬇️ 360 KB/s
+  password: 0324fbc29561
+  port: 443
+  server: 654968169.df6h451rh.xin
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
+- name: 🇺🇳 UN 127 | ⬇️ 289 KB/s
+  port: 443
+  server: 45.63.38.134
+  skip-cert-verify: true
   tls: true
   type: http
-  username: freeuser1
-- name: 🇷🇴 RO 064 | ⬇️ 1.11 MB/s
+- name: 🇧🇪 BE 129 | ⬇️ 440 KB/s
+  password: null
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇸🇬 SG 131 | ⬇️ 1.03 MB/s
+  port: 56656
+  reality-opts:
+    public-key: QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc
+    short-id: aae6d935
+  server: funagfrdfs.alixxplay.com
+  servername: cdn-dynmedia-1.microsoft.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇺🇳 UN 132 | ⬇️ 903 KB/s
+  port: 30892
+  reality-opts:
+    public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
+    short-id: 3d31326f95
+  server: funagfrdfs.alixxplay.com
+  servername: us1p1.xn--ghq880n3na965a.com
+  tls: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: 🇺🇳 UN 134 | ⬇️ 350 KB/s
+  port: 8443
+  server: 77.221.136.60
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇧🇪 BE 135 | ⬇️ 869 KB/s
+  port: 33939
+  reality-opts:
+    public-key: IPg65ZC9ZkvXpBZN2GSnICYZaIyGxcj2d8Y406KXA1I
+    short-id: b20abd16cda27eeb
+  server: funagfrdfs.alixxplay.com
+  servername: www.otto.de
+  tls: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: 🇺🇳 UN 139 | ⬇️ 445 KB/s
+  port: 1080
+  server: 52.128.241.109
+  skip-cert-verify: true
+  type: socks5
+- name: 🇺🇳 UN 140 | ⬇️ 120 KB/s
+  port: 8090
+  server: 82.96.128.175
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇳 UN 160 | ⬇️ 813 KB/s
+  port: 443
+  server: 130.195.250.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇷🇴 RO 162 | ⬇️ 137 KB/s
   port: 9002
-  server: 193.176.84.39
+  server: 193.176.84.25
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 065 | ⬇️ 986 KB/s
-  port: 9002
-  server: 193.176.84.20
+- name: 🇧🇪 BE 169 | ⬇️ 447 KB/s
+  port: 9443
+  server: 152.233.9.239
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇺🇳 UN 179 | ⬇️ 148 KB/s
+  port: 443
+  server: 141.94.16.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸 US 201 | ⬇️ 375 KB/s
+  port: 443
+  server: 149.34.248.65
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
   udp: true
-- name: 🇨🇦 CA 068 | ⬇️ 627 KB/s
+- name: 🇺🇳 UN 203 | ⬇️ 137 KB/s
+  port: 443
+  server: 38.28.185.224
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇳🇱 NL 206 | ⬇️ 334 KB/s
+  port: 1080
+  server: 82.21.153.14
+  skip-cert-verify: true
+  type: socks5
+- name: 🇨🇦 CA 207 | ⬇️ 104 KB/s
   password: freeuser1
   port: 9251
   server: nl199.freeconnect.link
@@ -321,1255 +274,82 @@ proxies:
   tls: true
   type: http
   username: freeuser1
-- name: 🇷🇴 RO 069 | ⬇️ 503 KB/s
-  password: None
-  port: 9002
-  server: 193.176.84.31
+- name: 🇺🇳 UN 215 | ⬇️ 257 KB/s
+  port: 9443
+  server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
-- name: 🇺🇳 UN 070 | ⬇️ 917 KB/s
-  password: 'null'
-  port: 9002
-  server: 193.176.84.36
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇳 UN 071 | ⬇️ 431 KB/s
-  port: 8443
-  server: 5.35.100.14
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 072 | ⬇️ 766 KB/s
+- name: 🇺🇳 UN 233 | ⬇️ 144 KB/s
   port: 443
-  server: 82.66.235.221
+  server: 64.98.50.100
   skip-cert-verify: true
   tls: true
   type: http
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: 🇰🇷 KR 073 | ⬇️ 2.50 MB/s
-  network: http
-  port: 443
-  server: 13.124.9.166
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-- name: 🇺🇳 UN 074 | ⬇️ 2.10 MB/s
-  port: 443
-  server: 178.248.73.58
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇷🇴 RO 076 | ⬇️ 748 KB/s
-  port: 9002
-  server: 193.176.84.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 077 | ⬇️ 1.14 MB/s
-  password: 'null'
-  port: 9002
-  server: 193.176.84.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇳 UN 078 | ⬇️ 104 KB/s
-  password: 9jkvAVV-9ufV6IGd
-  port: 27402
-  server: chalo-ru.nexorcdn.com
-  skip-cert-verify: true
-  sni: chalo-ru.nexorcdn.com
-  tls: true
-  type: http
-  username: ef37886e2aacd6fa622e3de3810299c2
-- name: 🇷🇴 RO 079 | ⬇️ 1.07 MB/s
-  password: None
-  port: 9002
-  server: 193.176.84.23
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 080 | ⬇️ 918 KB/s
-  port: 9002
-  server: 193.176.84.35
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 082 | ⬇️ 929 KB/s
-  password: null
-  port: 9002
-  server: 193.176.84.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇳 UN 083 | ⬇️ 527 KB/s
-  password: freeuser1
-  port: 9251
-  server: br3-tr.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 084 | ⬇️ 626 KB/s
-  port: 443
-  server: 176.94.74.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 085 | ⬇️ 854 KB/s
-  password: None
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇭🇰 HK 086 | ⬇️ 2.26 MB/s
-  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
-  port: 24318
-  server: svip.skycon808.com
-  skip-cert-verify: true
-  sni: hk08.jdddyy01.cc
-  type: anytls
-  udp: true
-- name: 🇺🇳 UN 087 | ⬇️ 902 KB/s
-  password: freeuser1
-  port: 9251
-  server: br4-tr.freeconnect.link
-  skip-cert-verify: true
-  sni: br4-tr.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇷🇺 RU 089 | ⬇️ 1.16 MB/s
-  port: 1446
-  server: 46.29.166.134
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇷🇴 RO 090 | ⬇️ 1.15 MB/s
-  port: 9002
-  server: 193.176.84.21
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 🇺🇳 UN 092 | ⬇️ 784 KB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  server: api.mediapolyana.cc
-  servername: api.mediapolyana.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-- name: 🇺🇳 UN 093 | ⬇️ 938 KB/s
-  port: 443
-  server: 149.36.51.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 094 | ⬇️ 761 KB/s
-  password: freeuser1
-  port: 9251
-  server: nl202.freeconnect.link
-  skip-cert-verify: true
-  sni: nl202.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 095 | ⬇️ 1.09 MB/s
-  password: null
-  port: 9002
-  server: 193.176.84.40
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇳 UN 096 | ⬇️ 726 KB/s
-  port: 1080
-  server: 62.83.34.101
-  skip-cert-verify: true
-  type: socks5
-- name: 🇺🇳 UN 097 | ⬇️ 938 KB/s
-  password: freeuser1
-  port: 9251
-  server: ma1-gb.freeconnect.link
-  sni: ma1-gb.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇳🇱 NL 100 | ⬇️ 846 KB/s
-  port: 9002
-  server: 84.17.47.123
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 103 | ⬇️ 344 KB/s
-  port: 9002
-  server: 84.17.47.149
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇳🇱 NL 105 | ⬇️ 1.04 MB/s
-  port: 9002
-  server: 84.17.47.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 108 | ⬇️ 1.04 MB/s
-  port: 9002
-  server: 84.17.47.126
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 109 | ⬇️ 939 KB/s
-  port: 443
-  server: 51.158.243.91
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇷🇴 RO 111 | ⬇️ 1.12 MB/s
-  port: 9002
-  server: 193.176.84.32
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 112 | ⬇️ 929 KB/s
-  port: 9002
-  server: 84.17.47.124
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 113 | ⬇️ 907 KB/s
-  password: None
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇳🇱 NL 114 | ⬇️ 832 KB/s
-  port: 9002
-  server: 84.17.47.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 115 | ⬇️ 557 KB/s
-  port: 443
-  server: 185.93.106.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 116 | ⬇️ 931 KB/s
-  password: 'null'
-  port: 9002
-  server: 84.17.47.147
-  skip-cert-verify: true
-  sni: 84.17.47.147
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇳🇱 NL 117 | ⬇️ 445 KB/s
-  port: 9002
-  server: 84.17.47.150
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 118 | ⬇️ 1.07 MB/s
-  port: 443
-  server: 194.67.110.12
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 122 | ⬇️ 943 KB/s
-  port: 9002
-  server: 84.17.47.148
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪 DE 124 | ⬇️ 934 KB/s
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 127 | ⬇️ 189 KB/s
-  port: 4443
-  server: 83.172.143.53
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 129 | ⬇️ 1.07 MB/s
-  port: 8443
-  server: 198.105.124.180
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸 US 131 | ⬇️ 335 KB/s
-  port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 132 | ⬇️ 394 KB/s
-  port: 9002
-  server: 193.176.84.25
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 134 | ⬇️ 1.15 MB/s
-  port: 443
-  server: 193.233.75.115
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 136 | ⬇️ 839 KB/s
-  port: 19362
-  server: 51.159.225.197
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 139 | ⬇️ 921 KB/s
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 140 | ⬇️ 924 KB/s
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪 DE 145 | ⬇️ 618 KB/s
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 146 | ⬇️ 570 KB/s
-  port: 443
-  server: 217.210.129.243
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 149 | ⬇️ 3.73 MB/s
-  port: 1080
-  server: 47.238.126.208
-  type: socks5
-- name: 🇺🇳 UN 152 | ⬇️ 768 KB/s
-  password: freeuser1
-  port: 9251
-  server: nl205.freeconnect.link
-  sni: nl205.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 153 | ⬇️ 717 KB/s
-  port: 443
-  server: 94.177.163.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 156 | ⬇️ 334 KB/s
-  port: 443
-  server: 38.28.185.224
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪 DE 157 | ⬇️ 1.04 MB/s
-  port: 443
-  server: 79.76.126.155
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 160 | ⬇️ 774 KB/s
-  password: freeuser1
-  port: 9251
-  server: nl207.freeconnect.link
-  sni: nl207.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇫🇷 FR 162 | ⬇️ 890 KB/s
-  port: 443
-  server: 82.65.162.76
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 163 | ⬇️ 376 KB/s
-  password: u93yPGuY2zgIsisJZKS2QzJzg
-  port: 443
-  server: 78.17.171.62
-  skip-cert-verify: true
-  sni: FREETOPLAY-2.TETRIS-GAME.WORLD
-  type: trojan
-  udp: true
-- name: 🇺🇳 UN 164 | ⬇️ 976 KB/s
-  port: 8081
-  server: 31.32.19.111
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 165 | ⬇️ 771 KB/s
-  port: 443
-  server: 89.150.35.94
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 167 | ⬇️ 1.29 MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.215
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 168 | ⬇️ 558 KB/s
-  port: 443
-  server: 148.135.10.80
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇺🇳 UN 169 | ⬇️ 708 KB/s
-  network: tcp
-  port: 443
+  name: 🇺🇳 UN 260 | ⬇️ 1.10 MB/s
+  port: 54528
   reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  server: api.videolaguna.cc
-  servername: api.videolaguna.cc
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  server: funagfrdfs.alixxplay.com
+  servername: www.apple.com
   tls: true
   type: vless
-  udp: true
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  xudp: true
-- name: 🇺🇸 US 170 | ⬇️ 1.12 MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 171 | ⬇️ 1.14 MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.197
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸 US 172 | ⬇️ 1.11 MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 🇺🇳 UN 173 | ⬇️ 1.13 MB/s
-  port: 9002
-  server: 138.199.35.220
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 177 | ⬇️ 1.27 MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇳 UN 179 | ⬇️ 1.28 MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇳 UN 180 | ⬇️ 1015 KB/s
-  password: None
-  port: 9002
-  server: 138.199.35.201
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇳 UN 183 | ⬇️ 1.13 MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.205
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸 US 184 | ⬇️ 776 KB/s
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 187 | ⬇️ 1.26 MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.212
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 188 | ⬇️ 1023 KB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.218
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 🇺🇸 US 189 | ⬇️ 409 KB/s
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: 🇺🇸 US 282 | ⬇️ 451 KB/s
   port: 443
   server: 38.28.193.188
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇦🇹 AT 190 | ⬇️ 572 KB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  server: 189.74.115.16
-  servername: api.mediakaskad.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-- name: 🇺🇳 UN 191 | ⬇️ 1.15 MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.217
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸 US 192 | ⬇️ 487 KB/s
-  port: 9002
-  server: 138.199.35.198
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸 US 193 | ⬇️ 390 KB/s
-  password: None
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 194 | ⬇️ 1.12 MB/s
-  password: null
-  port: 9002
-  server: 138.199.35.202
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇳 UN 195 | ⬇️ 1.13 MB/s
-  port: 9002
-  server: 138.199.35.199
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 199 | ⬇️ 635 KB/s
-  port: 443
-  server: 31.186.220.204
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 202 | ⬇️ 946 KB/s
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 82.196.9.7
-  sni: 52c40907.acsnet.co
-  tls: true
-  type: http
-  username: testuser1
-- name: 🇺🇳 UN 205 | ⬇️ 961 KB/s
-  port: 8443
-  server: 44.248.167.117
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇨🇦 CA 214 | ⬇️ 1.29 MB/s
-  port: 9090
-  server: 185.53.129.141
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 220 | ⬇️ 1.28 MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.204
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸 US 221 | ⬇️ 417 KB/s
-  port: 9002
-  server: 138.199.35.203
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 222 | ⬇️ 968 KB/s
-  password: freeuser1
-  port: 9251
-  server: nl203.freeconnect.link
-  skip-cert-verify: true
-  sni: nl203.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 223 | ⬇️ 764 KB/s
-  port: 8443
-  server: 188.120.225.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 225 | ⬇️ 796 KB/s
-  port: 8090
-  server: 83.206.1.225
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 230 | ⬇️ 1.13 MB/s
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 232 | ⬇️ 1.03 MB/s
-  password: freeuser1
-  port: 9251
-  server: dl1-us.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 233 | ⬇️ 1.28 MB/s
-  port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇳 UN 234 | ⬇️ 958 KB/s
-  port: 8443
-  server: 44.229.69.166
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸 US 235 | ⬇️ 1.27 MB/s
-  port: 9002
-  server: 138.199.35.211
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸 US 236 | ⬇️ 1.18 MB/s
-  port: 443
-  server: 45.63.38.134
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 238 | ⬇️ 1.28 MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 🇺🇳 UN 239 | ⬇️ 978 KB/s
-  port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 241 | ⬇️ 263 KB/s
-  port: 8443
-  server: 45.145.73.240
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 244 | ⬇️ 1010 KB/s
-  port: 443
-  server: 23.133.176.14
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇧🇪 BE 250 | ⬇️ 1.27 MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.200
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 🇺🇳 UN 251 | ⬇️ 1.11 MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.209
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇳 UN 257 | ⬇️ 997 KB/s
-  port: 443
-  server: 64.98.50.100
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 264 | ⬇️ 723 KB/s
-  port: 443
-  server: 162.217.114.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 276 | ⬇️ 1.13 MB/s
-  port: 1080
-  server: 52.128.241.109
-  skip-cert-verify: true
-  type: socks5
-- name: 🇺🇳 UN 277 | ⬇️ 1.07 MB/s
-  password: freeuser1
-  port: 9251
-  server: cr1-id.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 278 | ⬇️ 1.46 MB/s
-  network: ws
-  port: 443
-  server: grimness-backlogs.cdn-content.com
-  servername: grimness-backlogs.cdn-content.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85ab5d03-5d67-4a95-b1f5-3f1f62d64625
-  ws-opts:
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-    path: /ws
-- name: 🇺🇳 UN 280 | ⬇️ 1.20 MB/s
-  port: 1080
-  server: 52.128.241.107
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- name: 🇺🇳 UN 283 | ⬇️ 506 KB/s
-  port: 8443
-  server: 77.221.136.60
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 284 | ⬇️ 751 KB/s
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 US 288 | ⬇️ 842 KB/s
-  port: 443
-  reality-opts:
-    public-key: CcMEJ-JOS4clB3gXbc6wXgzkiJQbyNpKY90I8B6AqyU
-    short-id: 4c188683e2c14a3c
-  server: 31.76.227.60
-  servername: assets-mi-29.spbstudentlife.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05c8eabe-96af-4db2-bb2f-a24fa84344ba
-- name: 🇺🇳 UN 291 | ⬇️ 1.11 MB/s
-  password: freeuser1
-  port: 9251
-  server: cr2-id.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 292 | ⬇️ 1.37 MB/s
-  port: 443
-  server: 141.94.16.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 294 | ⬇️ 752 KB/s
-  port: 443
-  server: 62.90.77.30
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 295 | ⬇️ 248 KB/s
-  port: 443
-  server: 110.173.188.221
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 297 | ⬇️ 838 KB/s
-  port: 443
-  server: 162.244.227.36
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 300 | ⬇️ 110 KB/s
-  port: 8090
-  server: 217.181.201.254
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 302 | ⬇️ 948 KB/s
-  port: 443
-  server: 24.225.10.211
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 303 | ⬇️ 729 KB/s
-  port: 443
-  server: 96.5.129.85
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪 DE 307 | ⬇️ 929 KB/s
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 309 | ⬇️ 966 KB/s
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 147.182.216.4
-  sni: 93b6d804.acsnet.co
-  tls: true
-  type: http
-  username: testuser1
-- name: 🇺🇸 US 310 | ⬇️ 783 KB/s
-  port: 8443
-  server: 18.206.28.143
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸 US 311 | ⬇️ 440 KB/s
-  port: 8090
-  server: 24.142.229.178
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 312 | ⬇️ 1.11 MB/s
-  port: 8443
-  server: 129.212.181.253
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 313 | ⬇️ 421 KB/s
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 107.151.238.27
-  sni: 6b97ee1b.acsnet.co
-  tls: true
-  type: http
-  username: testuser1
-- name: 🇺🇳 UN 314 | ⬇️ 838 KB/s
-  port: 8443
-  server: 138.16.163.249
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 315 | ⬇️ 864 KB/s
-  port: 8090
-  server: 82.96.128.175
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸 US 316 | ⬇️ 723 KB/s
-  port: 443
-  server: 66.64.100.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 317 | ⬇️ 456 KB/s
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 167.172.172.190
-  skip-cert-verify: true
-  sni: a7acacbe.acsnet.co
-  tls: true
-  type: http
-  username: testuser1
-- name: 🇺🇸 US 318 | ⬇️ 1.17 MB/s
-  password: test123
-  port: 1080
-  server: 104.168.249.36
-  type: socks5
-  username: test123
-- name: 🇺🇳 UN 319 | ⬇️ 949 KB/s
-  password: freeuser1
-  port: 9251
-  server: nl206.freeconnect.link
-  skip-cert-verify: true
-  sni: nl206.freeconnect.link
-  tls: true
-  type: http
-  username: freeuser1
-- name: 🇺🇳 UN 320 | ⬇️ 891 KB/s
-  port: 8090
-  server: 50.76.211.251
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇯🇵 JP 323 | ⬇️ 1.24 MB/s
-  port: 1080
-  server: 217.142.236.180
-  type: socks5
-- name: 🇺🇳 UN 324 | ⬇️ 749 KB/s
-  port: 443
-  server: 95.229.15.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 325 | ⬇️ 488 KB/s
-  port: 1080
-  server: 213.199.47.140
-  type: socks5
-- name: 🇺🇳 UN 327 | ⬇️ 180 KB/s
-  port: 8443
-  server: 45.142.141.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 328 | ⬇️ 599 KB/s
-  port: 8090
-  server: 184.188.139.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 329 | ⬇️ 861 KB/s
-  port: 443
-  server: 109.116.41.154
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 331 | ⬇️ 194 KB/s
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 332 | ⬇️ 714 KB/s
+- name: 🇺🇳 UN 289 | ⬇️ 271 KB/s
   port: 443
   server: 154.26.139.24
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇳 UN 336 | ⬇️ 715 KB/s
-  port: 443
-  server: 134.65.17.77
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 337 | ⬇️ 762 KB/s
-  port: 443
-  server: 159.13.44.228
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 338 | ⬇️ 666 KB/s
-  port: 8090
-  server: 50.184.176.222
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 339 | ⬇️ 197 KB/s
-  port: 443
-  server: 207.5.30.9
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦 CA 340 | ⬇️ 642 KB/s
-  port: 8090
-  server: 98.101.229.212
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 341 | ⬇️ 894 KB/s
-  port: 443
-  server: 142.44.210.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 342 | ⬇️ 273 KB/s
-  port: 8090
-  server: 209.148.53.153
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 343 | ⬇️ 312 KB/s
-  password: ''
-  port: 443
-  server: 31.77.19.92
-  skip-cert-verify: true
-  sub_tag: A001-260618
-  type: socks5
-  udp: true
-  username: ''
-- name: 🇺🇳 UN 344 | ⬇️ 176 KB/s
-  port: 9050
-  server: 45.61.129.165
-  type: socks5
 proxy-groups:
 - name: ⟳ 自动选择
   type: url-test
   proxies:
-  - 🇩🇪 DE 000 | ⬇️ 1.53 MB/s
-  - 🇺🇳 UN 002 | ⬇️ 1.44 MB/s
-  - 🇺🇳 UN 004 | ⬇️ 1.57 MB/s
-  - 🇺🇳 UN 005 | ⬇️ 824 KB/s
-  - 🇺🇳 UN 006 | ⬇️ 1.75 MB/s
-  - 🇺🇳 UN 007 | ⬇️ 1.35 MB/s
-  - 🇺🇳 UN 011 | ⬇️ 1.66 MB/s
-  - 🇺🇳 UN 012 | ⬇️ 1.64 MB/s
-  - 🇫🇷 FR 013 | ⬇️ 1.55 MB/s
-  - 🇺🇳 UN 018 | ⬇️ 119 KB/s
-  - 🇩🇪 DE 020 | ⬇️ 940 KB/s
-  - 🇫🇷 FR 021 | ⬇️ 1.52 MB/s
-  - 🇺🇳 UN 024 | ⬇️ 1.30 MB/s
-  - 🇮🇪 IE 026 | ⬇️ 1.42 MB/s
-  - 🇺🇳 UN 029 | ⬇️ 1.24 MB/s
-  - 🇺🇳 UN 036 | ⬇️ 1.28 MB/s
-  - 🇰🇷 KR 037 | ⬇️ 2.21 MB/s
-  - 🇺🇳 UN 041 | ⬇️ 1.44 MB/s
-  - 🇺🇳 UN 045 | ⬇️ 1.23 MB/s
-  - 🇺🇳 UN 046 | ⬇️ 1.37 MB/s
-  - 🇺🇳 UN 047 | ⬇️ 1.12 MB/s
-  - 🇹🇼 TW 048 | ⬇️ 173 KB/s
-  - 🇷🇴 RO 049 | ⬇️ 1014 KB/s
-  - 🇺🇳 UN 050 | ⬇️ 848 KB/s
-  - 🇷🇴 RO 051 | ⬇️ 829 KB/s
-  - 🇩🇪 DE 052 | ⬇️ 1.11 MB/s
-  - 🇷🇴 RO 054 | ⬇️ 696 KB/s
-  - 🇺🇳 UN 055 | ⬇️ 1.09 MB/s
-  - 🇷🇴 RO 056 | ⬇️ 1.10 MB/s
-  - 🇺🇳 UN 057 | ⬇️ 1.09 MB/s
-  - 🇺🇳 UN 058 | ⬇️ 692 KB/s
-  - 🇺🇳 UN 060 | ⬇️ 1.01 MB/s
-  - 🇺🇳 UN 061 | ⬇️ 1.60 MB/s
-  - 🇺🇳 UN 062 | ⬇️ 905 KB/s
-  - 🇩🇪 DE 063 | ⬇️ 761 KB/s
-  - 🇷🇴 RO 064 | ⬇️ 1.11 MB/s
-  - 🇷🇴 RO 065 | ⬇️ 986 KB/s
-  - 🇨🇦 CA 068 | ⬇️ 627 KB/s
-  - 🇷🇴 RO 069 | ⬇️ 503 KB/s
-  - 🇺🇳 UN 070 | ⬇️ 917 KB/s
-  - 🇺🇳 UN 071 | ⬇️ 431 KB/s
-  - 🇺🇳 UN 072 | ⬇️ 766 KB/s
-  - 🇰🇷 KR 073 | ⬇️ 2.50 MB/s
-  - 🇺🇳 UN 074 | ⬇️ 2.10 MB/s
-  - 🇷🇴 RO 076 | ⬇️ 748 KB/s
-  - 🇺🇳 UN 077 | ⬇️ 1.14 MB/s
-  - 🇺🇳 UN 078 | ⬇️ 104 KB/s
-  - 🇷🇴 RO 079 | ⬇️ 1.07 MB/s
-  - 🇷🇴 RO 080 | ⬇️ 918 KB/s
-  - 🇺🇳 UN 082 | ⬇️ 929 KB/s
-  - 🇺🇳 UN 083 | ⬇️ 527 KB/s
-  - 🇺🇳 UN 084 | ⬇️ 626 KB/s
-  - 🇳🇱 NL 085 | ⬇️ 854 KB/s
-  - 🇭🇰 HK 086 | ⬇️ 2.26 MB/s
-  - 🇺🇳 UN 087 | ⬇️ 902 KB/s
-  - 🇷🇺 RU 089 | ⬇️ 1.16 MB/s
-  - 🇷🇴 RO 090 | ⬇️ 1.15 MB/s
-  - 🇺🇳 UN 092 | ⬇️ 784 KB/s
-  - 🇺🇳 UN 093 | ⬇️ 938 KB/s
-  - 🇺🇳 UN 094 | ⬇️ 761 KB/s
-  - 🇺🇳 UN 095 | ⬇️ 1.09 MB/s
-  - 🇺🇳 UN 096 | ⬇️ 726 KB/s
-  - 🇺🇳 UN 097 | ⬇️ 938 KB/s
-  - 🇳🇱 NL 100 | ⬇️ 846 KB/s
-  - 🇳🇱 NL 103 | ⬇️ 344 KB/s
-  - 🇳🇱 NL 105 | ⬇️ 1.04 MB/s
-  - 🇺🇳 UN 108 | ⬇️ 1.04 MB/s
-  - 🇳🇱 NL 109 | ⬇️ 939 KB/s
-  - 🇷🇴 RO 111 | ⬇️ 1.12 MB/s
-  - 🇺🇳 UN 112 | ⬇️ 929 KB/s
-  - 🇺🇳 UN 113 | ⬇️ 907 KB/s
-  - 🇳🇱 NL 114 | ⬇️ 832 KB/s
-  - 🇺🇳 UN 115 | ⬇️ 557 KB/s
-  - 🇳🇱 NL 116 | ⬇️ 931 KB/s
-  - 🇳🇱 NL 117 | ⬇️ 445 KB/s
-  - 🇺🇳 UN 118 | ⬇️ 1.07 MB/s
-  - 🇳🇱 NL 122 | ⬇️ 943 KB/s
-  - 🇩🇪 DE 124 | ⬇️ 934 KB/s
-  - 🇺🇳 UN 127 | ⬇️ 189 KB/s
-  - 🇺🇳 UN 129 | ⬇️ 1.07 MB/s
-  - 🇺🇸 US 131 | ⬇️ 335 KB/s
-  - 🇷🇴 RO 132 | ⬇️ 394 KB/s
-  - 🇺🇳 UN 134 | ⬇️ 1.15 MB/s
-  - 🇺🇳 UN 136 | ⬇️ 839 KB/s
-  - 🇺🇳 UN 139 | ⬇️ 921 KB/s
-  - 🇺🇳 UN 140 | ⬇️ 924 KB/s
-  - 🇩🇪 DE 145 | ⬇️ 618 KB/s
-  - 🇺🇳 UN 146 | ⬇️ 570 KB/s
-  - 🇺🇳 UN 149 | ⬇️ 3.73 MB/s
-  - 🇺🇳 UN 152 | ⬇️ 768 KB/s
-  - 🇺🇳 UN 153 | ⬇️ 717 KB/s
-  - 🇺🇳 UN 156 | ⬇️ 334 KB/s
-  - 🇩🇪 DE 157 | ⬇️ 1.04 MB/s
-  - 🇺🇳 UN 160 | ⬇️ 774 KB/s
-  - 🇫🇷 FR 162 | ⬇️ 890 KB/s
-  - 🇺🇳 UN 163 | ⬇️ 376 KB/s
-  - 🇺🇳 UN 164 | ⬇️ 976 KB/s
-  - 🇺🇳 UN 165 | ⬇️ 771 KB/s
-  - 🇺🇳 UN 167 | ⬇️ 1.29 MB/s
-  - 🇺🇳 UN 168 | ⬇️ 558 KB/s
-  - 🇺🇳 UN 169 | ⬇️ 708 KB/s
-  - 🇺🇸 US 170 | ⬇️ 1.12 MB/s
-  - 🇺🇳 UN 171 | ⬇️ 1.14 MB/s
-  - 🇺🇸 US 172 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 173 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 177 | ⬇️ 1.27 MB/s
-  - 🇺🇳 UN 179 | ⬇️ 1.28 MB/s
-  - 🇺🇳 UN 180 | ⬇️ 1015 KB/s
-  - 🇺🇳 UN 183 | ⬇️ 1.13 MB/s
-  - 🇺🇸 US 184 | ⬇️ 776 KB/s
-  - 🇺🇳 UN 187 | ⬇️ 1.26 MB/s
-  - 🇺🇳 UN 188 | ⬇️ 1023 KB/s
-  - 🇺🇸 US 189 | ⬇️ 409 KB/s
-  - 🇦🇹 AT 190 | ⬇️ 572 KB/s
-  - 🇺🇳 UN 191 | ⬇️ 1.15 MB/s
-  - 🇺🇸 US 192 | ⬇️ 487 KB/s
-  - 🇺🇸 US 193 | ⬇️ 390 KB/s
-  - 🇺🇳 UN 194 | ⬇️ 1.12 MB/s
-  - 🇺🇳 UN 195 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 199 | ⬇️ 635 KB/s
-  - 🇳🇱 NL 202 | ⬇️ 946 KB/s
-  - 🇺🇳 UN 205 | ⬇️ 961 KB/s
-  - 🇨🇦 CA 214 | ⬇️ 1.29 MB/s
-  - 🇺🇳 UN 220 | ⬇️ 1.28 MB/s
-  - 🇺🇸 US 221 | ⬇️ 417 KB/s
-  - 🇺🇳 UN 222 | ⬇️ 968 KB/s
-  - 🇺🇳 UN 223 | ⬇️ 764 KB/s
-  - 🇺🇳 UN 225 | ⬇️ 796 KB/s
-  - 🇺🇳 UN 230 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 232 | ⬇️ 1.03 MB/s
-  - 🇺🇳 UN 233 | ⬇️ 1.28 MB/s
-  - 🇺🇳 UN 234 | ⬇️ 958 KB/s
-  - 🇺🇸 US 235 | ⬇️ 1.27 MB/s
-  - 🇺🇸 US 236 | ⬇️ 1.18 MB/s
-  - 🇺🇳 UN 238 | ⬇️ 1.28 MB/s
-  - 🇺🇳 UN 239 | ⬇️ 978 KB/s
-  - 🇺🇳 UN 241 | ⬇️ 263 KB/s
-  - 🇺🇳 UN 244 | ⬇️ 1010 KB/s
-  - 🇧🇪 BE 250 | ⬇️ 1.27 MB/s
-  - 🇺🇳 UN 251 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 257 | ⬇️ 997 KB/s
-  - 🇺🇳 UN 264 | ⬇️ 723 KB/s
-  - 🇺🇳 UN 276 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 277 | ⬇️ 1.07 MB/s
-  - 🇺🇳 UN 278 | ⬇️ 1.46 MB/s
-  - 🇺🇳 UN 280 | ⬇️ 1.20 MB/s
-  - 🇺🇳 UN 283 | ⬇️ 506 KB/s
-  - 🇺🇳 UN 284 | ⬇️ 751 KB/s
-  - 🇺🇸 US 288 | ⬇️ 842 KB/s
-  - 🇺🇳 UN 291 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 292 | ⬇️ 1.37 MB/s
-  - 🇺🇳 UN 294 | ⬇️ 752 KB/s
-  - 🇺🇳 UN 295 | ⬇️ 248 KB/s
-  - 🇺🇳 UN 297 | ⬇️ 838 KB/s
-  - 🇺🇳 UN 300 | ⬇️ 110 KB/s
-  - 🇺🇳 UN 302 | ⬇️ 948 KB/s
-  - 🇺🇳 UN 303 | ⬇️ 729 KB/s
-  - 🇩🇪 DE 307 | ⬇️ 929 KB/s
-  - 🇺🇳 UN 309 | ⬇️ 966 KB/s
-  - 🇺🇸 US 310 | ⬇️ 783 KB/s
-  - 🇺🇸 US 311 | ⬇️ 440 KB/s
-  - 🇺🇳 UN 312 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 313 | ⬇️ 421 KB/s
-  - 🇺🇳 UN 314 | ⬇️ 838 KB/s
-  - 🇺🇳 UN 315 | ⬇️ 864 KB/s
-  - 🇺🇸 US 316 | ⬇️ 723 KB/s
-  - 🇺🇳 UN 317 | ⬇️ 456 KB/s
-  - 🇺🇸 US 318 | ⬇️ 1.17 MB/s
-  - 🇺🇳 UN 319 | ⬇️ 949 KB/s
-  - 🇺🇳 UN 320 | ⬇️ 891 KB/s
-  - 🇯🇵 JP 323 | ⬇️ 1.24 MB/s
-  - 🇺🇳 UN 324 | ⬇️ 749 KB/s
-  - 🇺🇳 UN 325 | ⬇️ 488 KB/s
-  - 🇺🇳 UN 327 | ⬇️ 180 KB/s
-  - 🇺🇳 UN 328 | ⬇️ 599 KB/s
-  - 🇺🇳 UN 329 | ⬇️ 861 KB/s
-  - 🇺🇳 UN 331 | ⬇️ 194 KB/s
-  - 🇺🇳 UN 332 | ⬇️ 714 KB/s
-  - 🇺🇳 UN 336 | ⬇️ 715 KB/s
-  - 🇺🇳 UN 337 | ⬇️ 762 KB/s
-  - 🇺🇳 UN 338 | ⬇️ 666 KB/s
-  - 🇺🇳 UN 339 | ⬇️ 197 KB/s
-  - 🇨🇦 CA 340 | ⬇️ 642 KB/s
-  - 🇺🇳 UN 341 | ⬇️ 894 KB/s
-  - 🇺🇳 UN 342 | ⬇️ 273 KB/s
-  - 🇺🇳 UN 343 | ⬇️ 312 KB/s
-  - 🇺🇳 UN 344 | ⬇️ 176 KB/s
+  - 🇧🇪 BE 009 | ⬇️ 764 KB/s
+  - 🇺🇳 UN 027 | ⬇️ 659 KB/s
+  - 🇸🇬 SG 028 | ⬇️ 400 KB/s
+  - 🇺🇳 UN 047 | ⬇️ 121 KB/s
+  - 🇸🇬 SG 058 | ⬇️ 586 KB/s
+  - 🇺🇸 US 063 | ⬇️ 430 KB/s
+  - 🇳🇱 NL 072 | ⬇️ 542 KB/s
+  - 🇺🇸 US 076 | ⬇️ 567 KB/s
+  - 🇺🇳 UN 079 | ⬇️ 252 KB/s
+  - 🇷🇺 RU 082 | ⬇️ 108 KB/s
+  - 🇷🇺 RU 089 | ⬇️ 266 KB/s
+  - 🇨🇦 CA 115 | ⬇️ 372 KB/s
+  - 🇺🇳 UN 120 | ⬇️ 416 KB/s
+  - 🇭🇰 HK 122 | ⬇️ 360 KB/s
+  - 🇺🇳 UN 127 | ⬇️ 289 KB/s
+  - 🇧🇪 BE 129 | ⬇️ 440 KB/s
+  - 🇸🇬 SG 131 | ⬇️ 1.03 MB/s
+  - 🇺🇳 UN 132 | ⬇️ 903 KB/s
+  - 🇺🇳 UN 134 | ⬇️ 350 KB/s
+  - 🇧🇪 BE 135 | ⬇️ 869 KB/s
+  - 🇺🇳 UN 139 | ⬇️ 445 KB/s
+  - 🇺🇳 UN 140 | ⬇️ 120 KB/s
+  - 🇺🇳 UN 160 | ⬇️ 813 KB/s
+  - 🇷🇴 RO 162 | ⬇️ 137 KB/s
+  - 🇧🇪 BE 169 | ⬇️ 447 KB/s
+  - 🇺🇳 UN 179 | ⬇️ 148 KB/s
+  - 🇺🇸 US 201 | ⬇️ 375 KB/s
+  - 🇺🇳 UN 203 | ⬇️ 137 KB/s
+  - 🇳🇱 NL 206 | ⬇️ 334 KB/s
+  - 🇨🇦 CA 207 | ⬇️ 104 KB/s
+  - 🇺🇳 UN 215 | ⬇️ 257 KB/s
+  - 🇺🇳 UN 233 | ⬇️ 144 KB/s
+  - 🇺🇳 UN 260 | ⬇️ 1.10 MB/s
+  - 🇺🇸 US 282 | ⬇️ 451 KB/s
+  - 🇺🇳 UN 289 | ⬇️ 271 KB/s
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -1577,192 +357,40 @@ proxy-groups:
   type: select
   proxies:
   - ⟳ 自动选择
-  - 🇩🇪 DE 000 | ⬇️ 1.53 MB/s
-  - 🇺🇳 UN 002 | ⬇️ 1.44 MB/s
-  - 🇺🇳 UN 004 | ⬇️ 1.57 MB/s
-  - 🇺🇳 UN 005 | ⬇️ 824 KB/s
-  - 🇺🇳 UN 006 | ⬇️ 1.75 MB/s
-  - 🇺🇳 UN 007 | ⬇️ 1.35 MB/s
-  - 🇺🇳 UN 011 | ⬇️ 1.66 MB/s
-  - 🇺🇳 UN 012 | ⬇️ 1.64 MB/s
-  - 🇫🇷 FR 013 | ⬇️ 1.55 MB/s
-  - 🇺🇳 UN 018 | ⬇️ 119 KB/s
-  - 🇩🇪 DE 020 | ⬇️ 940 KB/s
-  - 🇫🇷 FR 021 | ⬇️ 1.52 MB/s
-  - 🇺🇳 UN 024 | ⬇️ 1.30 MB/s
-  - 🇮🇪 IE 026 | ⬇️ 1.42 MB/s
-  - 🇺🇳 UN 029 | ⬇️ 1.24 MB/s
-  - 🇺🇳 UN 036 | ⬇️ 1.28 MB/s
-  - 🇰🇷 KR 037 | ⬇️ 2.21 MB/s
-  - 🇺🇳 UN 041 | ⬇️ 1.44 MB/s
-  - 🇺🇳 UN 045 | ⬇️ 1.23 MB/s
-  - 🇺🇳 UN 046 | ⬇️ 1.37 MB/s
-  - 🇺🇳 UN 047 | ⬇️ 1.12 MB/s
-  - 🇹🇼 TW 048 | ⬇️ 173 KB/s
-  - 🇷🇴 RO 049 | ⬇️ 1014 KB/s
-  - 🇺🇳 UN 050 | ⬇️ 848 KB/s
-  - 🇷🇴 RO 051 | ⬇️ 829 KB/s
-  - 🇩🇪 DE 052 | ⬇️ 1.11 MB/s
-  - 🇷🇴 RO 054 | ⬇️ 696 KB/s
-  - 🇺🇳 UN 055 | ⬇️ 1.09 MB/s
-  - 🇷🇴 RO 056 | ⬇️ 1.10 MB/s
-  - 🇺🇳 UN 057 | ⬇️ 1.09 MB/s
-  - 🇺🇳 UN 058 | ⬇️ 692 KB/s
-  - 🇺🇳 UN 060 | ⬇️ 1.01 MB/s
-  - 🇺🇳 UN 061 | ⬇️ 1.60 MB/s
-  - 🇺🇳 UN 062 | ⬇️ 905 KB/s
-  - 🇩🇪 DE 063 | ⬇️ 761 KB/s
-  - 🇷🇴 RO 064 | ⬇️ 1.11 MB/s
-  - 🇷🇴 RO 065 | ⬇️ 986 KB/s
-  - 🇨🇦 CA 068 | ⬇️ 627 KB/s
-  - 🇷🇴 RO 069 | ⬇️ 503 KB/s
-  - 🇺🇳 UN 070 | ⬇️ 917 KB/s
-  - 🇺🇳 UN 071 | ⬇️ 431 KB/s
-  - 🇺🇳 UN 072 | ⬇️ 766 KB/s
-  - 🇰🇷 KR 073 | ⬇️ 2.50 MB/s
-  - 🇺🇳 UN 074 | ⬇️ 2.10 MB/s
-  - 🇷🇴 RO 076 | ⬇️ 748 KB/s
-  - 🇺🇳 UN 077 | ⬇️ 1.14 MB/s
-  - 🇺🇳 UN 078 | ⬇️ 104 KB/s
-  - 🇷🇴 RO 079 | ⬇️ 1.07 MB/s
-  - 🇷🇴 RO 080 | ⬇️ 918 KB/s
-  - 🇺🇳 UN 082 | ⬇️ 929 KB/s
-  - 🇺🇳 UN 083 | ⬇️ 527 KB/s
-  - 🇺🇳 UN 084 | ⬇️ 626 KB/s
-  - 🇳🇱 NL 085 | ⬇️ 854 KB/s
-  - 🇭🇰 HK 086 | ⬇️ 2.26 MB/s
-  - 🇺🇳 UN 087 | ⬇️ 902 KB/s
-  - 🇷🇺 RU 089 | ⬇️ 1.16 MB/s
-  - 🇷🇴 RO 090 | ⬇️ 1.15 MB/s
-  - 🇺🇳 UN 092 | ⬇️ 784 KB/s
-  - 🇺🇳 UN 093 | ⬇️ 938 KB/s
-  - 🇺🇳 UN 094 | ⬇️ 761 KB/s
-  - 🇺🇳 UN 095 | ⬇️ 1.09 MB/s
-  - 🇺🇳 UN 096 | ⬇️ 726 KB/s
-  - 🇺🇳 UN 097 | ⬇️ 938 KB/s
-  - 🇳🇱 NL 100 | ⬇️ 846 KB/s
-  - 🇳🇱 NL 103 | ⬇️ 344 KB/s
-  - 🇳🇱 NL 105 | ⬇️ 1.04 MB/s
-  - 🇺🇳 UN 108 | ⬇️ 1.04 MB/s
-  - 🇳🇱 NL 109 | ⬇️ 939 KB/s
-  - 🇷🇴 RO 111 | ⬇️ 1.12 MB/s
-  - 🇺🇳 UN 112 | ⬇️ 929 KB/s
-  - 🇺🇳 UN 113 | ⬇️ 907 KB/s
-  - 🇳🇱 NL 114 | ⬇️ 832 KB/s
-  - 🇺🇳 UN 115 | ⬇️ 557 KB/s
-  - 🇳🇱 NL 116 | ⬇️ 931 KB/s
-  - 🇳🇱 NL 117 | ⬇️ 445 KB/s
-  - 🇺🇳 UN 118 | ⬇️ 1.07 MB/s
-  - 🇳🇱 NL 122 | ⬇️ 943 KB/s
-  - 🇩🇪 DE 124 | ⬇️ 934 KB/s
-  - 🇺🇳 UN 127 | ⬇️ 189 KB/s
-  - 🇺🇳 UN 129 | ⬇️ 1.07 MB/s
-  - 🇺🇸 US 131 | ⬇️ 335 KB/s
-  - 🇷🇴 RO 132 | ⬇️ 394 KB/s
-  - 🇺🇳 UN 134 | ⬇️ 1.15 MB/s
-  - 🇺🇳 UN 136 | ⬇️ 839 KB/s
-  - 🇺🇳 UN 139 | ⬇️ 921 KB/s
-  - 🇺🇳 UN 140 | ⬇️ 924 KB/s
-  - 🇩🇪 DE 145 | ⬇️ 618 KB/s
-  - 🇺🇳 UN 146 | ⬇️ 570 KB/s
-  - 🇺🇳 UN 149 | ⬇️ 3.73 MB/s
-  - 🇺🇳 UN 152 | ⬇️ 768 KB/s
-  - 🇺🇳 UN 153 | ⬇️ 717 KB/s
-  - 🇺🇳 UN 156 | ⬇️ 334 KB/s
-  - 🇩🇪 DE 157 | ⬇️ 1.04 MB/s
-  - 🇺🇳 UN 160 | ⬇️ 774 KB/s
-  - 🇫🇷 FR 162 | ⬇️ 890 KB/s
-  - 🇺🇳 UN 163 | ⬇️ 376 KB/s
-  - 🇺🇳 UN 164 | ⬇️ 976 KB/s
-  - 🇺🇳 UN 165 | ⬇️ 771 KB/s
-  - 🇺🇳 UN 167 | ⬇️ 1.29 MB/s
-  - 🇺🇳 UN 168 | ⬇️ 558 KB/s
-  - 🇺🇳 UN 169 | ⬇️ 708 KB/s
-  - 🇺🇸 US 170 | ⬇️ 1.12 MB/s
-  - 🇺🇳 UN 171 | ⬇️ 1.14 MB/s
-  - 🇺🇸 US 172 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 173 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 177 | ⬇️ 1.27 MB/s
-  - 🇺🇳 UN 179 | ⬇️ 1.28 MB/s
-  - 🇺🇳 UN 180 | ⬇️ 1015 KB/s
-  - 🇺🇳 UN 183 | ⬇️ 1.13 MB/s
-  - 🇺🇸 US 184 | ⬇️ 776 KB/s
-  - 🇺🇳 UN 187 | ⬇️ 1.26 MB/s
-  - 🇺🇳 UN 188 | ⬇️ 1023 KB/s
-  - 🇺🇸 US 189 | ⬇️ 409 KB/s
-  - 🇦🇹 AT 190 | ⬇️ 572 KB/s
-  - 🇺🇳 UN 191 | ⬇️ 1.15 MB/s
-  - 🇺🇸 US 192 | ⬇️ 487 KB/s
-  - 🇺🇸 US 193 | ⬇️ 390 KB/s
-  - 🇺🇳 UN 194 | ⬇️ 1.12 MB/s
-  - 🇺🇳 UN 195 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 199 | ⬇️ 635 KB/s
-  - 🇳🇱 NL 202 | ⬇️ 946 KB/s
-  - 🇺🇳 UN 205 | ⬇️ 961 KB/s
-  - 🇨🇦 CA 214 | ⬇️ 1.29 MB/s
-  - 🇺🇳 UN 220 | ⬇️ 1.28 MB/s
-  - 🇺🇸 US 221 | ⬇️ 417 KB/s
-  - 🇺🇳 UN 222 | ⬇️ 968 KB/s
-  - 🇺🇳 UN 223 | ⬇️ 764 KB/s
-  - 🇺🇳 UN 225 | ⬇️ 796 KB/s
-  - 🇺🇳 UN 230 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 232 | ⬇️ 1.03 MB/s
-  - 🇺🇳 UN 233 | ⬇️ 1.28 MB/s
-  - 🇺🇳 UN 234 | ⬇️ 958 KB/s
-  - 🇺🇸 US 235 | ⬇️ 1.27 MB/s
-  - 🇺🇸 US 236 | ⬇️ 1.18 MB/s
-  - 🇺🇳 UN 238 | ⬇️ 1.28 MB/s
-  - 🇺🇳 UN 239 | ⬇️ 978 KB/s
-  - 🇺🇳 UN 241 | ⬇️ 263 KB/s
-  - 🇺🇳 UN 244 | ⬇️ 1010 KB/s
-  - 🇧🇪 BE 250 | ⬇️ 1.27 MB/s
-  - 🇺🇳 UN 251 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 257 | ⬇️ 997 KB/s
-  - 🇺🇳 UN 264 | ⬇️ 723 KB/s
-  - 🇺🇳 UN 276 | ⬇️ 1.13 MB/s
-  - 🇺🇳 UN 277 | ⬇️ 1.07 MB/s
-  - 🇺🇳 UN 278 | ⬇️ 1.46 MB/s
-  - 🇺🇳 UN 280 | ⬇️ 1.20 MB/s
-  - 🇺🇳 UN 283 | ⬇️ 506 KB/s
-  - 🇺🇳 UN 284 | ⬇️ 751 KB/s
-  - 🇺🇸 US 288 | ⬇️ 842 KB/s
-  - 🇺🇳 UN 291 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 292 | ⬇️ 1.37 MB/s
-  - 🇺🇳 UN 294 | ⬇️ 752 KB/s
-  - 🇺🇳 UN 295 | ⬇️ 248 KB/s
-  - 🇺🇳 UN 297 | ⬇️ 838 KB/s
-  - 🇺🇳 UN 300 | ⬇️ 110 KB/s
-  - 🇺🇳 UN 302 | ⬇️ 948 KB/s
-  - 🇺🇳 UN 303 | ⬇️ 729 KB/s
-  - 🇩🇪 DE 307 | ⬇️ 929 KB/s
-  - 🇺🇳 UN 309 | ⬇️ 966 KB/s
-  - 🇺🇸 US 310 | ⬇️ 783 KB/s
-  - 🇺🇸 US 311 | ⬇️ 440 KB/s
-  - 🇺🇳 UN 312 | ⬇️ 1.11 MB/s
-  - 🇺🇳 UN 313 | ⬇️ 421 KB/s
-  - 🇺🇳 UN 314 | ⬇️ 838 KB/s
-  - 🇺🇳 UN 315 | ⬇️ 864 KB/s
-  - 🇺🇸 US 316 | ⬇️ 723 KB/s
-  - 🇺🇳 UN 317 | ⬇️ 456 KB/s
-  - 🇺🇸 US 318 | ⬇️ 1.17 MB/s
-  - 🇺🇳 UN 319 | ⬇️ 949 KB/s
-  - 🇺🇳 UN 320 | ⬇️ 891 KB/s
-  - 🇯🇵 JP 323 | ⬇️ 1.24 MB/s
-  - 🇺🇳 UN 324 | ⬇️ 749 KB/s
-  - 🇺🇳 UN 325 | ⬇️ 488 KB/s
-  - 🇺🇳 UN 327 | ⬇️ 180 KB/s
-  - 🇺🇳 UN 328 | ⬇️ 599 KB/s
-  - 🇺🇳 UN 329 | ⬇️ 861 KB/s
-  - 🇺🇳 UN 331 | ⬇️ 194 KB/s
-  - 🇺🇳 UN 332 | ⬇️ 714 KB/s
-  - 🇺🇳 UN 336 | ⬇️ 715 KB/s
-  - 🇺🇳 UN 337 | ⬇️ 762 KB/s
-  - 🇺🇳 UN 338 | ⬇️ 666 KB/s
-  - 🇺🇳 UN 339 | ⬇️ 197 KB/s
-  - 🇨🇦 CA 340 | ⬇️ 642 KB/s
-  - 🇺🇳 UN 341 | ⬇️ 894 KB/s
-  - 🇺🇳 UN 342 | ⬇️ 273 KB/s
-  - 🇺🇳 UN 343 | ⬇️ 312 KB/s
-  - 🇺🇳 UN 344 | ⬇️ 176 KB/s
+  - 🇧🇪 BE 009 | ⬇️ 764 KB/s
+  - 🇺🇳 UN 027 | ⬇️ 659 KB/s
+  - 🇸🇬 SG 028 | ⬇️ 400 KB/s
+  - 🇺🇳 UN 047 | ⬇️ 121 KB/s
+  - 🇸🇬 SG 058 | ⬇️ 586 KB/s
+  - 🇺🇸 US 063 | ⬇️ 430 KB/s
+  - 🇳🇱 NL 072 | ⬇️ 542 KB/s
+  - 🇺🇸 US 076 | ⬇️ 567 KB/s
+  - 🇺🇳 UN 079 | ⬇️ 252 KB/s
+  - 🇷🇺 RU 082 | ⬇️ 108 KB/s
+  - 🇷🇺 RU 089 | ⬇️ 266 KB/s
+  - 🇨🇦 CA 115 | ⬇️ 372 KB/s
+  - 🇺🇳 UN 120 | ⬇️ 416 KB/s
+  - 🇭🇰 HK 122 | ⬇️ 360 KB/s
+  - 🇺🇳 UN 127 | ⬇️ 289 KB/s
+  - 🇧🇪 BE 129 | ⬇️ 440 KB/s
+  - 🇸🇬 SG 131 | ⬇️ 1.03 MB/s
+  - 🇺🇳 UN 132 | ⬇️ 903 KB/s
+  - 🇺🇳 UN 134 | ⬇️ 350 KB/s
+  - 🇧🇪 BE 135 | ⬇️ 869 KB/s
+  - 🇺🇳 UN 139 | ⬇️ 445 KB/s
+  - 🇺🇳 UN 140 | ⬇️ 120 KB/s
+  - 🇺🇳 UN 160 | ⬇️ 813 KB/s
+  - 🇷🇴 RO 162 | ⬇️ 137 KB/s
+  - 🇧🇪 BE 169 | ⬇️ 447 KB/s
+  - 🇺🇳 UN 179 | ⬇️ 148 KB/s
+  - 🇺🇸 US 201 | ⬇️ 375 KB/s
+  - 🇺🇳 UN 203 | ⬇️ 137 KB/s
+  - 🇳🇱 NL 206 | ⬇️ 334 KB/s
+  - 🇨🇦 CA 207 | ⬇️ 104 KB/s
+  - 🇺🇳 UN 215 | ⬇️ 257 KB/s
+  - 🇺🇳 UN 233 | ⬇️ 144 KB/s
+  - 🇺🇳 UN 260 | ⬇️ 1.10 MB/s
+  - 🇺🇸 US 282 | ⬇️ 451 KB/s
+  - 🇺🇳 UN 289 | ⬇️ 271 KB/s
 rules:
 - MATCH,🚀 节点选择
