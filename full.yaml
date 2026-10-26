@@ -1,8 +1,8 @@
 # ============================================================
 #  mihomo-check 自动优选订阅 · 完整配置 (full.yaml)
-#  更新时间 : 2026-10-25 18:20:20 CST
-#  节点总数 : 29
-#  类型分布 : http:11 / vless:6 / trojan:5 / anytls:2 / vmess:2 / ssr:2 / socks5:1
+#  更新时间 : 2026-10-26 21:47:27 CST
+#  节点总数 : 20
+#  类型分布 : http:15 / anytls:2 / vless:2 / socks5:1
 #  代理组   : 🚀 节点选择(手动) / ⟳ 自动选择(url-test 自动优选)
 #  端口     : mixed-port 7890 | DNS: fake-ip (223.5.5.5 / 119.29.29.29)
 #  用途     : 直接作为客户端订阅导入
@@ -22,23 +22,70 @@ dns:
   - 119.29.29.29
   - 114.114.114.114
 proxies:
-- client-fingerprint: edge
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api
-  name: 🇳🇱 NL 003 | ⬇️ 538 KB/s
-  network: grpc
-  port: 2053
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
-  server: nl3.mycloud1.org
-  servername: nl3.mycloud1.org
+- name: 🇺🇳 UN 014 | ⬇️ 160 KB/s
+  port: 443
+  server: 137.175.22.116
+  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-- name: 🇹🇼 TW 005 | ⬇️ 1.57 MB/s
+- name: 🇺🇳 UN 018 | ⬇️ 164 KB/s
+  port: 443
+  server: 137.175.22.29
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇺🇳 UN 020 | ⬇️ 983 KB/s
+  password: 0324fbc29561
+  port: 443
+  server: 684616s4.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+- name: 🇺🇸 US 027 | ⬇️ 225 KB/s
+  password: None
+  port: 9443
+  server: 154.47.25.78
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇳 UN 040 | ⬇️ 122 KB/s
+  port: 443
+  server: 137.175.22.85
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇳 UN 041 | ⬇️ 112 KB/s
+  port: 443
+  server: 137.175.22.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇳 UN 042 | ⬇️ 187 KB/s
+  port: 443
+  server: 137.175.22.88
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇳 UN 044 | ⬇️ 264 KB/s
+  port: 8443
+  server: 77.221.136.60
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇹🇼 TW 047 | ⬇️ 185 KB/s
   password: 0324fbc29561
   port: 443
   server: er8u54dh.df6h451rh.xin
@@ -46,281 +93,118 @@ proxies:
   sni: px.ads.linkedin.com
   type: anytls
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇳🇱 NL 016 | ⬇️ 617 KB/s
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  servername: v29.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- cipher: chacha20-ietf
-  name: 🇺🇳 UN 023 | ⬇️ 1.80 MB/s
-  obfs: plain
-  obfs-param: 6f5218522.douyin.com
-  password: di15PV
-  port: 44983
-  protocol: auth_aes128_md5
-  protocol-param: 218522:0hfCJk
-  server: api.meituan88.com
-  type: ssr
-- name: 🇺🇳 UN 027 | ⬇️ 854 KB/s
-  port: 443
-  server: 85.203.39.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇺🇳 UN 035 | ⬇️ 148 KB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: p7X0vRL9R-23Ey-MZZZj7FY0g87nQq0Jzc01DwuryRk
-    short-id: 7597c5df264bcc10
-  server: 45.74.159.238
-  servername: trend.eidoslab.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-- cipher: rc4-md5
-  name: 🇺🇳 UN 037 | ⬇️ 1.75 MB/s
-  obfs: tls1.2_ticket_auth
-  obfs-param: 6f5218522.douyin.com
-  password: di15PV
-  port: 43694
-  protocol: auth_aes128_md5
-  protocol-param: 218522:0hfCJk
-  server: api.meituan88.com
-  type: ssr
-- name: 🇺🇳 UN 038 | ⬇️ 434 KB/s
-  port: 443
-  server: 137.175.22.88
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇳 UN 042 | ⬇️ 822 KB/s
-  port: 443
-  server: 185.216.35.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 046 | ⬇️ 566 KB/s
-  password: None
-  port: 443
-  server: 149.36.51.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇹🇼 TW 047 | ⬇️ 1.50 MB/s
-  password: 0324fbc29561
-  port: 443
-  server: 684616s4.df6h451rh.xin
-  skip-cert-verify: true
-  sni: px.ads.linkedin.com
-  type: anytls
-  udp: true
-- name: 🇩🇪 DE 053 | ⬇️ 326 KB/s
-  password: None
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇭🇰 HK 055 | ⬇️ 486 KB/s
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjmlxy.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: 🇨🇭 CH 060 | ⬇️ 557 KB/s
-  password: None
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇳🇱 NL 066 | ⬇️ 394 KB/s
-  password: None
-  port: 9443
-  server: 149.36.51.161
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸 US 067 | ⬇️ 292 KB/s
-  port: 1080
-  server: 209.50.255.91
-  skip-cert-verify: true
-  type: socks5
-- name: 🇭🇰 HK 071 | ⬇️ 597 KB/s
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjxg.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: 🇩🇪 DE 077 | ⬇️ 592 KB/s
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇭🇰 HK 100 | ⬇️ 343 KB/s
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjadly.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-  udp: true
-- name: 🇺🇳 UN 101 | ⬇️ 122 KB/s
-  port: 8443
-  server: 45.150.164.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇷 FR 113 | ⬇️ 424 KB/s
-  network: tcp
-  port: 2092
-  reality-opts:
-    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
-    short-id: 716b7eba38125f3a
-  server: 213.152.165.204
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41e9280c-818c-4939-b5d6-332bf4d872e6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇳 UN 136 | ⬇️ 315 KB/s
-  network: tcp
-  port: 2095
-  reality-opts:
-    public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI
-    short-id: 3869d49a9a79e06a
-  server: 213.152.165.203
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b38712cb-e4aa-4462-b7e3-df20508d2b39
-- name: 🇹🇼 TW 146 | ⬇️ 1.31 MB/s
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  port: 24999
-  server: tjtw.m2k699.com
-  skip-cert-verify: true
-  sni: www.itunes.com
-  type: trojan
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇺🇳 UN 147 | ⬇️ 1.02 MB/s
-  port: 56415
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  server: funagfrdfs.alixxplay.com
-  servername: www.kaidee.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-- name: 🇺🇸 US 187 | ⬇️ 481 KB/s
+- name: 🇺🇳 UN 059 | ⬇️ 608 KB/s
   port: 8443
   server: 154.81.36.92
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇳 UN 209 | ⬇️ 285 KB/s
-  network: ws
-  password: e20fd145-65f1-4aa3-96be-da0524bbb16e
-  port: 20230
-  server: us003.421421.xyz
+- name: 🇺🇳 UN 067 | ⬇️ 244 KB/s
+  port: 443
+  server: 137.175.22.52
   skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  ws-opts:
-    path: /
-- name: 🇺🇳 UN 211 | ⬇️ 408 KB/s
-  port: 8443
-  server: 77.221.136.60
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  name: 🇳🇱 NL 086 | ⬇️ 255 KB/s
+  network: grpc
+  port: 443
+  server: 85.198.83.46
+  servername: renderer-bridge-1-881.mirra.now
+  tls: true
+  type: vless
+  udp: true
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+- name: 🇺🇳 UN 089 | ⬇️ 305 KB/s
+  port: 443
+  server: 137.175.22.84
   skip-cert-verify: true
   tls: true
   type: http
-- alterId: 0
-  cipher: auto
-  name: 🇧🇪 BE 213 | ⬇️ 428 KB/s
-  network: ws
-  port: 80
-  server: 57.128.164.21
+- name: 🇺🇳 UN 096 | ⬇️ 511 KB/s
+  password: None
+  port: 443
+  server: 130.195.250.34
   skip-cert-verify: true
-  type: vmess
-  uuid: bda82bcd-f6e2-46ae-9552-673f0b87ac30
-  ws-opts:
-    headers:
-      Host: https.http.www.net.com.ramseyv2.ir.
-    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
-- client-fingerprint: firefox
+  tls: true
+  type: http
+- name: 🇺🇳 UN 106 | ⬇️ 398 KB/s
+  port: 443
+  server: 137.175.22.96
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 JP 242 | ⬇️ 197 KB/s
-  network: tcp
-  packet-encoding: xudp
-  port: 54528
+  name: 🇸🇬 SG 114 | ⬇️ 102 KB/s
+  port: 35544
   reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
   server: funagfrdfs.alixxplay.com
-  servername: www.apple.com
-  skip-cert-verify: false
+  servername: iosapps.itunes.apple.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: 🇺🇳 UN 121 | ⬇️ 739 KB/s
+  port: 443
+  server: 5.255.118.82
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇳 UN 150 | ⬇️ 439 KB/s
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸 US 164 | ⬇️ 241 KB/s
+  port: 443
+  server: 45.63.38.134
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇫🇷 FR 181 | ⬇️ 445 KB/s
+  port: 1081
+  server: 107.191.47.162
+  skip-cert-verify: true
+  sub_tag: S001-260618
+  type: socks5
+  udp: true
 proxy-groups:
 - name: ⟳ 自动选择
   type: url-test
   proxies:
-  - 🇳🇱 NL 003 | ⬇️ 538 KB/s
-  - 🇹🇼 TW 005 | ⬇️ 1.57 MB/s
-  - 🇳🇱 NL 016 | ⬇️ 617 KB/s
-  - 🇺🇳 UN 023 | ⬇️ 1.80 MB/s
-  - 🇺🇳 UN 027 | ⬇️ 854 KB/s
-  - 🇺🇳 UN 035 | ⬇️ 148 KB/s
-  - 🇺🇳 UN 037 | ⬇️ 1.75 MB/s
-  - 🇺🇳 UN 038 | ⬇️ 434 KB/s
-  - 🇺🇳 UN 042 | ⬇️ 822 KB/s
-  - 🇳🇱 NL 046 | ⬇️ 566 KB/s
-  - 🇹🇼 TW 047 | ⬇️ 1.50 MB/s
-  - 🇩🇪 DE 053 | ⬇️ 326 KB/s
-  - 🇭🇰 HK 055 | ⬇️ 486 KB/s
-  - 🇨🇭 CH 060 | ⬇️ 557 KB/s
-  - 🇳🇱 NL 066 | ⬇️ 394 KB/s
-  - 🇺🇸 US 067 | ⬇️ 292 KB/s
-  - 🇭🇰 HK 071 | ⬇️ 597 KB/s
-  - 🇩🇪 DE 077 | ⬇️ 592 KB/s
-  - 🇭🇰 HK 100 | ⬇️ 343 KB/s
-  - 🇺🇳 UN 101 | ⬇️ 122 KB/s
-  - 🇫🇷 FR 113 | ⬇️ 424 KB/s
-  - 🇺🇳 UN 136 | ⬇️ 315 KB/s
-  - 🇹🇼 TW 146 | ⬇️ 1.31 MB/s
-  - 🇺🇳 UN 147 | ⬇️ 1.02 MB/s
-  - 🇺🇸 US 187 | ⬇️ 481 KB/s
-  - 🇺🇳 UN 209 | ⬇️ 285 KB/s
-  - 🇺🇳 UN 211 | ⬇️ 408 KB/s
-  - 🇧🇪 BE 213 | ⬇️ 428 KB/s
-  - 🇯🇵 JP 242 | ⬇️ 197 KB/s
+  - 🇺🇳 UN 014 | ⬇️ 160 KB/s
+  - 🇺🇳 UN 018 | ⬇️ 164 KB/s
+  - 🇺🇳 UN 020 | ⬇️ 983 KB/s
+  - 🇺🇸 US 027 | ⬇️ 225 KB/s
+  - 🇺🇳 UN 040 | ⬇️ 122 KB/s
+  - 🇺🇳 UN 041 | ⬇️ 112 KB/s
+  - 🇺🇳 UN 042 | ⬇️ 187 KB/s
+  - 🇺🇳 UN 044 | ⬇️ 264 KB/s
+  - 🇹🇼 TW 047 | ⬇️ 185 KB/s
+  - 🇺🇳 UN 059 | ⬇️ 608 KB/s
+  - 🇺🇳 UN 067 | ⬇️ 244 KB/s
+  - 🇳🇱 NL 086 | ⬇️ 255 KB/s
+  - 🇺🇳 UN 089 | ⬇️ 305 KB/s
+  - 🇺🇳 UN 096 | ⬇️ 511 KB/s
+  - 🇺🇳 UN 106 | ⬇️ 398 KB/s
+  - 🇸🇬 SG 114 | ⬇️ 102 KB/s
+  - 🇺🇳 UN 121 | ⬇️ 739 KB/s
+  - 🇺🇳 UN 150 | ⬇️ 439 KB/s
+  - 🇺🇸 US 164 | ⬇️ 241 KB/s
+  - 🇫🇷 FR 181 | ⬇️ 445 KB/s
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -328,34 +212,25 @@ proxy-groups:
   type: select
   proxies:
   - ⟳ 自动选择
-  - 🇳🇱 NL 003 | ⬇️ 538 KB/s
-  - 🇹🇼 TW 005 | ⬇️ 1.57 MB/s
-  - 🇳🇱 NL 016 | ⬇️ 617 KB/s
-  - 🇺🇳 UN 023 | ⬇️ 1.80 MB/s
-  - 🇺🇳 UN 027 | ⬇️ 854 KB/s
-  - 🇺🇳 UN 035 | ⬇️ 148 KB/s
-  - 🇺🇳 UN 037 | ⬇️ 1.75 MB/s
-  - 🇺🇳 UN 038 | ⬇️ 434 KB/s
-  - 🇺🇳 UN 042 | ⬇️ 822 KB/s
-  - 🇳🇱 NL 046 | ⬇️ 566 KB/s
-  - 🇹🇼 TW 047 | ⬇️ 1.50 MB/s
-  - 🇩🇪 DE 053 | ⬇️ 326 KB/s
-  - 🇭🇰 HK 055 | ⬇️ 486 KB/s
-  - 🇨🇭 CH 060 | ⬇️ 557 KB/s
-  - 🇳🇱 NL 066 | ⬇️ 394 KB/s
-  - 🇺🇸 US 067 | ⬇️ 292 KB/s
-  - 🇭🇰 HK 071 | ⬇️ 597 KB/s
-  - 🇩🇪 DE 077 | ⬇️ 592 KB/s
-  - 🇭🇰 HK 100 | ⬇️ 343 KB/s
-  - 🇺🇳 UN 101 | ⬇️ 122 KB/s
-  - 🇫🇷 FR 113 | ⬇️ 424 KB/s
-  - 🇺🇳 UN 136 | ⬇️ 315 KB/s
-  - 🇹🇼 TW 146 | ⬇️ 1.31 MB/s
-  - 🇺🇳 UN 147 | ⬇️ 1.02 MB/s
-  - 🇺🇸 US 187 | ⬇️ 481 KB/s
-  - 🇺🇳 UN 209 | ⬇️ 285 KB/s
-  - 🇺🇳 UN 211 | ⬇️ 408 KB/s
-  - 🇧🇪 BE 213 | ⬇️ 428 KB/s
-  - 🇯🇵 JP 242 | ⬇️ 197 KB/s
+  - 🇺🇳 UN 014 | ⬇️ 160 KB/s
+  - 🇺🇳 UN 018 | ⬇️ 164 KB/s
+  - 🇺🇳 UN 020 | ⬇️ 983 KB/s
+  - 🇺🇸 US 027 | ⬇️ 225 KB/s
+  - 🇺🇳 UN 040 | ⬇️ 122 KB/s
+  - 🇺🇳 UN 041 | ⬇️ 112 KB/s
+  - 🇺🇳 UN 042 | ⬇️ 187 KB/s
+  - 🇺🇳 UN 044 | ⬇️ 264 KB/s
+  - 🇹🇼 TW 047 | ⬇️ 185 KB/s
+  - 🇺🇳 UN 059 | ⬇️ 608 KB/s
+  - 🇺🇳 UN 067 | ⬇️ 244 KB/s
+  - 🇳🇱 NL 086 | ⬇️ 255 KB/s
+  - 🇺🇳 UN 089 | ⬇️ 305 KB/s
+  - 🇺🇳 UN 096 | ⬇️ 511 KB/s
+  - 🇺🇳 UN 106 | ⬇️ 398 KB/s
+  - 🇸🇬 SG 114 | ⬇️ 102 KB/s
+  - 🇺🇳 UN 121 | ⬇️ 739 KB/s
+  - 🇺🇳 UN 150 | ⬇️ 439 KB/s
+  - 🇺🇸 US 164 | ⬇️ 241 KB/s
+  - 🇫🇷 FR 181 | ⬇️ 445 KB/s
 rules:
 - MATCH,🚀 节点选择
